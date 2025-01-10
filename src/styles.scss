@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background-color: black;
+  color: rgb(214, 208, 187);
+}
+
+/* Cambiar el color y tamaño */
+::-webkit-scrollbar {
+  width: 10px; /* Ancho del scroll vertical */
+  height: 10px; /* Altura del scroll horizontal */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a5a5a57e; /* Color del scroll */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b1b1b1c3; /* Color al pasar el mouse */
+}
+
+::-webkit-scrollbar-track {
+  background: #00000000; /* Fondo del track */
+}

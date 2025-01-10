@@ -1,0 +1,12 @@
+
+<h3 class="font-semibold text-4xl mb-4">Rock altenativo</h3>
+<div class="w-full overflow-x-scroll scroll-smooth pb-2 mb-16">
+  <div
+    class="flex space-x-4 snap-x snap-mandatory"
+  >
+    <!-- Tarjetas -->
+    @for (card of cards; track card.id) {
+      <app-article-card [album]="card" />
+    }
+  </div>
+</div>

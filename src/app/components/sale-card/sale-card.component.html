@@ -1,0 +1,12 @@
+<div
+  class="bg-black w-64 flex-col hover:cursor-pointer shadow-lg hover:shadow-stone-700 hover:scale-105 transition ease-in-out duration-300" (click)="goToAlbumArticle()"
+>
+  <img class="w-full aspect-square" src=" {{ album().cover }} " alt="" />
+  <div class="p-2">
+    <h3 class="truncate text-2xl font-bold">{{ album().name }}</h3>
+    <div class="flex text-lg">
+      <div class="truncate grow">{{ album().artist }}</div>
+      <div class="shrink">{{ album().price }}</div>
+    </div>
+  </div>
+</div>

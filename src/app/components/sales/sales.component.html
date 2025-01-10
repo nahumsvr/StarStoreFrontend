@@ -1,0 +1,8 @@
+<h1 class="text-5xl font-bold">Our sales!</h1>
+<div class="w-full overflow-x-scroll scroll-smooth bg-stone-300 my-2 lg:my-0 p-2 md:p-6">
+  <div class="flex space-x-4">
+    @for (sale of sales; track sale.id) {
+    <app-sale-card [album]="sale" />
+    }
+  </div>
+</div>
